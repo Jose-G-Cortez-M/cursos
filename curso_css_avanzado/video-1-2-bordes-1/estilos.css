@@ -1,0 +1,80 @@
+    /*Estás 3 líneas dentro de el contenedor ayudan a dar el estilo final de la página*/
+    
+    .uno {
+        display: flex;
+        justify-content: space-between;
+        /*Obliga a los elementos a estar en una sola linea y que se puedan incluir */
+        flex-wrap: wrap;
+    }
+    
+    #b1 {
+        border-radius: 25px;
+        background-color: greenyellow;
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+    }
+    
+    #b2 {
+        border-radius: 25px;
+        border: 2px solid blueviolet;
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+    }
+    
+    #b3 {
+        border-radius: 25px;
+        background-image: url('fondo.jpg');
+        background-position: left top;
+        background-repeat: repeat;
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+    }
+    
+    #b4 {
+        border-radius: 15px 50px 30px 5px;
+        background-color: red;
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+    }
+    
+    #b5 {
+        border-radius: 100%;
+        background-color: gold;
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+    }
+    
+    #b {
+        border: 20px solid greenyellow;
+        width: 250px;
+        height: 250px;
+        font-size: 22px;
+        padding: 20px;
+        background-color: darkred;
+        color: white;
+        /*el border image source hace referencia a que el borde sera al rededor*/
+        border-image-source: url('marco.png');
+        /*con slice se corta un pedaso de la imagen pero se trabaja en procentajes*/
+        border-image-slice: 25%;
+        /*para que se repita y para que se adapte es escalar la imagen de fondo con el objetivo que la imagen se ajuste con round*/
+        border-image-repeat: repeat round;
+        border-image-width: 30px;
+        border-image-outset: 50px;
+    }
+    
+    #c {
+        border: 20px solid greenyellow;
+        width: 250px;
+        height: 250px;
+        font-size: 22px;
+        padding: 20px;
+        background-color: darkred;
+        color: white;
+        /* con 100 damos un tamaño a la imagen y stretch se usa para estira la imagen y que ocupe toda el área*/
+        border-image: url('marco.png') 100 stretch;
+    }

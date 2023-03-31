@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    /*ancho*/
+    width: 100%;
+    /*Color de Fondo*/
+    background: darkslategrey;
+    /*Color del texto*/
+    color: white;
+    /*Espacio interior de separación entre el margen y el contenido*/
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+header img {
+    width: 100px;
+    margin-left: 46%;
+    margin-top: 1%;
+    /*Borde redondeado*/
+    border-radius: 100%;
+}
+header h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+}
+header h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+}
+
+section{
+    width: 70%;
+    margin: 0 auto;
+}
+article{
+    padding: 20px 0 20px 0;
+    border-bottom: 1px dotted darkgrey;
+}
+article h2{
+    float: left;
+    border-bottom: 2px solid cadetblue;
+    padding-bottom: 5px;
+    line-height: 1.3em;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+article p{
+    margin-left: 20%;
+}
+
+article p, article ul{
+    margin-left: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslategrey;
+    line-height: 3em;
+    margin-bottom: 1.4em;
+}
+article ul li{
+    margin-left: 15px;
+    list-style: square;
+}
+
+footer{
+    margin-top: 2em;
+    padding: 1em;
+    width: 100%;
+    background: darkslategrey;
+    color: azure;
+    text-align: center;
+}
+footer a:link, footer a:visited{
+    color: azure;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: orange;
+}

@@ -1,0 +1,71 @@
+/*.padre {
+    font-size: 20px;
+}
+
+.hijo {
+    font-size: 2rem;
+}
+
+.ejemplo {
+    font-size: 32px;
+}*/
+
+
+/*unidades flexibles*/
+
+html {
+    line-height: 1.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.caja {
+    display: flex;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.col {
+    flex: 1;
+    padding: 0 1em;
+}
+
+h1 {
+    color: darkslategrey;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: darkslategrey;
+    padding: 1em 4em;
+}
+
+.cont {
+    background: linear-gradient(to left, darkslategrey, lightcyan);
+    padding: 10vh 0;
+    height: 100vh;
+}
+
+.cont-img {
+    box-shadow: 3px 3px 25px 5px rgbz(0, 0, 0, 0.5);
+}
+
+.cont-title {
+    font-size: 8vw;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0 0 .25em;
+}
+
+.cont-text {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 0 0 1.5em;
+}

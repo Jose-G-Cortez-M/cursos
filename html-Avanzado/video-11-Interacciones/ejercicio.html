@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <style>
+        h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            font-size: 45px;
+            margin: 20px;
+        }
+        #contenedor{
+            margin: 20px;
+            float: left;
+            width: 80%;
+            height: 180px;
+            border: 4px solid blue;
+        }
+        #caja1,#caja2,#caja3{
+            float: left;
+            margin: 5px;
+            padding: 10px;
+        }
+        #caja1{
+            width: 30px;
+            height: 30px;
+            background-color: black;
+        }
+        #caja2{
+            width: 60px;
+            height: 60px;
+            background-color: green;
+        }
+        #caja3{
+            width: 90px;
+            height: 90px;
+            background-color: red;
+        }
+
+    </style>
+    <script>
+            function activar_drop(evt) {
+                evt.preventDefault();
+    
+            }
+            function drag(evt) {
+                evt.dataTransfer.setData("text",evt.target.id);
+            }
+            function drop(evt) {
+                evt.preventDefault();
+                var dato = evt.dataTransfer.getData("text");
+                evt.target.appendChild(document.getElementById(dato));
+    
+            }
+    </script>
+</head>
+<body>
+    <h1>Ejercicio</h1>
+    <div id="contenedor">
+        <div id="caja1" draggable="true" ondragstart="drag(event)"></div>
+        <div id="caja2" draggable="true" ondragstart="drag(event)"></div>
+        <div id="caja3" ondrop="drop(event)" ondragover="activar_drop(event)"></div>
+    </div>
+</body>
+</html>

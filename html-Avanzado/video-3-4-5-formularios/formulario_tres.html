@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Compar tickets</h1>
+    <form>
+        <br>
+        <label for="datomax">Fecha de compra</label>
+        <input type="date" id="datomax" max="2020-05-20">
+        <br><br>
+        <label for="phone">Ingrese su número de teléfono</label><br>
+        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{8}" placeholder="123-xxxxxxxx min 8 dig." required>
+        <input type="submit" value="enviar">
+        <br><br>
+        <label for="cantidad">Número de entradas</label><br>
+        <input type="number" id="cantidad" min="1" max="12">
+        <input type="submit" value="enviar"><hr>
+        <label for="nombre">NOMBRE:</label><br>
+        <input type="text" id="nombre" name="nom" size="11"><br>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" size="6"><br><br>
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>

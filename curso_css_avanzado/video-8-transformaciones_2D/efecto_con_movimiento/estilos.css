@@ -1,0 +1,19 @@
+div {
+    background: linear-gradient(180deg, red, orange);
+    width: 200px;
+    height: 200px;
+    /*da animación al elemento los datos que se ingrsan son de: tipo de transformación y el tiempo que dura tambien se define el número de repeticiones que va a tener*/
+    animation: skew 3s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+}
+
+@keyframes skew {
+    /*aquí se va a definir que hace en cada posición*/
+    0% {
+        transform: skew(20deg, 20deg);
+    }
+    100% {
+        transform: skew(-20deg, -20deg);
+    }
+}

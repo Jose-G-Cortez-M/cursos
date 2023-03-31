@@ -1,0 +1,15 @@
+    .cuadro_de_contenido {
+        width: 80%;
+        border: 3px solid red;
+    }
+    
+    .img {
+        width: 500px;
+        height: 340px;
+    }
+    
+    .cuadro_de_contenido img {
+        width: 100%;
+        /*propiedad que define como respode un elemento a la altura y el ancho de su cuadro de contenido*/
+        object-fit: fill;
+    }

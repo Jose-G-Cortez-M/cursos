@@ -1,0 +1,40 @@
+/*div {
+    text-align: center;
+    background: red;
+}
+
+h1 {
+    color: var(--titulo-color);
+}
+
+h2 {
+    color: var(--titulo-color);
+}
+
+:root {
+    --titulo-color: cyan;
+}*/
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 300px;
+    font-size: 30px;
+}
+
+.cursos {
+    --cursos-color: red;
+    --cruso-fondo: yellow;
+}
+
+.jose {
+    --border: green;
+    display: inline-block;
+    border: 3px solid var(--border);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.jose:hover {
+    background: var(--cruso-fondo);
+    color: var(--cursos-color);
+}

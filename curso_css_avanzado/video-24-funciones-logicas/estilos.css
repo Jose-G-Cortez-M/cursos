@@ -1,0 +1,47 @@
+/*body {
+    margin: 0;
+}
+
+div {
+    width: min(400px, 50vw);
+    height: 400px;
+    background: coral;
+}
+*/
+
+
+/*
+body {
+    margin: 0;
+}
+
+div {
+    width: max(50vw, 400px);
+    height: 400px;
+    background: coral;
+}
+
+body {
+    margin: 0;
+}
+
+div {
+    width: max(50vw, 400px);
+    height: 400px;
+    background: coral;
+}
+*/
+
+
+/*valor mínimo , valor ideal y valor máximo*/
+
+body {
+    margin: 0;
+}
+
+div {
+    width: 100vm;
+    height: 600px;
+    background-color: bisque;
+    font-size: clamp(36px, 38px + 3vw, 200px);
+}

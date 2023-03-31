@@ -1,0 +1,34 @@
+    #animacion {
+        height: 250px;
+        width: 150x;
+        margin: 0 auto;
+        background-color: red;
+        /*colocamos el nombre del keyframe que vamos a usar para animar*/
+        animation-name: animar;
+        /*Usamos e tiempo que durara la animación s segundos o ms milisegundos*/
+        animation-duration: 1.5s;
+        /*establece curvas de aceleración preestablecidas*/
+        animation-timing-function: ease-out;
+        /*el tiempo entre el elemento que se carga y el inicio de la secuencia de la animación*/
+        animation-delay: 0;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        /*dar inicio a la animación*/
+        animation-play-state: running;
+    }
+    
+    @keyframes animar {
+        0% {
+            transform: scale(.3);
+            background-color: darkred;
+            border-radius: 100%;
+        }
+        50% {
+            background-color: orange;
+        }
+        100% {
+            transform: scale(.5);
+            background-color: coral;
+        }
+    }

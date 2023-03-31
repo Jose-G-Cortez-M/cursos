@@ -1,0 +1,35 @@
+#p1 {
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 3px;
+    color: darkslateblue;
+    text-shadow: black 3px 3px 1px;
+}
+
+#p2 {
+    background-color: coral;
+    width: 400px;
+    height: 150px;
+    font-size: 70px;
+    box-shadow: black 0px 10px 20px 20px inset;
+}
+
+.tarjeta {
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px;
+}
+
+.numero {
+    background-color: darkred;
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.titulo {
+    padding: 5px;
+}

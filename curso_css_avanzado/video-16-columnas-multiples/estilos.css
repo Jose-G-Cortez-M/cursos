@@ -1,0 +1,11 @@
+.columnas {
+    /*dividir columnas en un número determinado*/
+    column-count: 3;
+    /*dividir columnas determinando un espacio*/
+    column-gap: 80px;
+    column-rule: 2px solid darkmagenta;
+}
+
+h1 {
+    column-span: all;
+}

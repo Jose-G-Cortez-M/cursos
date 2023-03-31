@@ -1,0 +1,6 @@
+Esta es una prueba de Jose Cortez
+
+
+para aprender el manejo de Git y github :P
+
+Ahora estoy probando el checkout

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--Formulario-->
+    <form>
+        <!--Formulario 1
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="name" placeholder="Ingresa tu nombre"><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="name" placeholder="Ingresa tu apellido">
+        -->
+    </form>
+    <h1>Seleccionar un club de fútbol</h1>
+    <!--action= es para colocar el archivo al que voy a enviar los datos para procesarlos-->
+    <!--target= es uin atributo que especifica el valor enviado _self = el formulario se enviara en la ventana actual para otra ventan poner el _blank-->
+    <form action="action_page.php" target="_blank" method="POST">
+        <!--Datos del formulario-->
+        <input type="radio" id="barcelona" name="club" value="barcelona">
+        <label for="barcelona">Barcelona</label><br>
+        <input type="radio" id="chelsea" name="club" value="chelsea">
+        <label for="chelsea">Chelsea</label><br>
+        <input type="radio" id="madrid" name="club" value="madrid">
+        <label for="madrid">Madrid</label><br>
+        <!--Enviar datos-->
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>

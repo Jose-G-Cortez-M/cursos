@@ -1,0 +1,36 @@
+    p {
+        width: 400px;
+        font-size: 40px;
+        border: 3px solid red;
+        /*sentido en el que se direcciona el texto*/
+        /*writing-mode: vertical-rl;*/
+        /*esta line es necesario por si alguien usa un navegador sin actilizaciones para que el texto se vea completamenet ne el recuadro*/
+        word-wrap: break-word;
+    }
+    
+    #texto {
+        /*si el texto es ya muy grande para no mostrar dentro del contenedor muestra ... para decir que ahi algo mas que mostrar*/
+        text-overflow: ellipsis;
+        /*Esto ara que el texto no pasara jamas a la siguiente linea ocupara la misma linea*/
+        white-space: nowrap;
+        /*esto hacemos para superar el tamaño del borde marcado*/
+        overflow: hidden;
+    }
+    
+    body {
+        background-color: bisque;
+    }
+    
+    #texto1 {
+        width: 200px;
+        border: 3px solid brow;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 24px;
+        font-size: 24px;
+        margin: 0;
+        background-color: white;
+        /*Esta propiedad controla el tamaño del elemento*/
+        resize: horizontal;
+    }

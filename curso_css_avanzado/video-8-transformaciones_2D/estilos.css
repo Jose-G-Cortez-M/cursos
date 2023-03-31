@@ -1,0 +1,14 @@
+div {
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(orange, red);
+    border: 7px solid darkred;
+    /*Esta palabra raslada las palabras en un sentido horizontal o vertical segun se defina*/
+    /*transform: translateX(10px);*/
+    /*rotar el elemento  la medida usada es en grados*/
+    /*transform: rotateX(180deg);*/
+    /*sesgar el elemento hace un corte en el elemento selecionado*/
+    /*transform: skewX(20deg);*/
+    /*escala los elementos segun el número que se pasa como parámetro por ejemplo 2 duplica el elemento */
+    transform: scaleX(2);
+}

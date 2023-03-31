@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaciones</title>
+    <style>
+        #caja{
+            width: 360px;
+            height: 240px;
+            padding: 20px;
+            margin: 20px;
+            border: 5px solid red;
+        }
+    </style>
+    <script>
+        function activar_drop(evt) {
+            evt.preventDefault();
+
+        }
+        function drag(evt) {
+            evt.dataTransfer.setData("text",evt.target.id);
+        }
+        function drop(evt) {
+            evt.preventDefault();
+            var dato = evt.dataTransfer.getData("text");
+            evt.target.appendChild(document.getElementById(dato));
+
+        }
+    </script>
+</head>
+<body>
+
+    <div id="caja" ondrop="drop(event)" ondragover="activar_drop(event)"></div>
+    
+    <img id="foto" src="1html.jpg" arrastrar="true" ondragstart="drag(event)" width="360" height="240">
+    
+
+</body>
+</html>

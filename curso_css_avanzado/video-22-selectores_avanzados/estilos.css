@@ -1,0 +1,18 @@
+/*p>span {
+    color: coral;
+}*/
+
+
+/*h1+h2 {
+    color: green;
+}*/
+
+
+/*
+h1~p {
+    background: orange;
+}*/
+
+h1[titulo='curso'] {
+    color: blue;
+}
